@@ -17,7 +17,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    productFlavors {
+        prod{
+            applicationId = "com.diyarme.designconcept"
+            versionName = "prod"
+        }
+        dev{
+            applicationId = "com.diyarme.designconcept.dev"
+            versionName = "dev"
+        }
+    }
 }
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
